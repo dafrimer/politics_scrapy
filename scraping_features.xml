@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scraperules>
+    <news_outlet name="Huffington Post" domain="huffingtonpost">
+        <url_focus>http://www.huffingtonpost.com/section/politics</url_focus>
+        <MainPageManage>
+            <splash></splash>
+            <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+        </MainPageManage>
+        <ArticleManage>
+            <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <headline_title>//h1[@class="headline__title"]/text()</headline_title>
+            <optional_tags>//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/text()</optional_tags>
+            <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
+        </ArticleManage>
+    </news_outlet>
+
+    <news_outlet name="Huffington Post" domain="huffingtonpost">
+        <url_focus>http://www.huffingtonpost.com/section/politics</url_focus>
+        <MainPageManage>
+            <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+        </MainPageManage>
+        <ArticleManage>
+            <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <headline_title>//h1[@class="headline__title"]/text()</headline_title>
+            <optional_tags>//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/text()</optional_tags>
+            <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
+        </ArticleManage>
+    </news_outlet>
+    <news_outlet name="Huffington Post" domain="huffingtonpost">
+        <url_focus>http://www.huffingtonpost.com/section/politics</url_focus>
+        <MainPageManage>
+            <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+        </MainPageManage>
+        <ArticleManage>
+            <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <headline_title>//h1[@class="headline__title"]/text()</headline_title>
+            <optional_tags>//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/text()</optional_tags>
+            <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
+        </ArticleManage>
+    </news_outlet>
+
+</scraperules>
+
