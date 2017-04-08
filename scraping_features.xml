@@ -5,39 +5,228 @@
         <MainPageManage>
             <splash></splash>
             <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+            <historical_main_page_headlines_xpath>//a[re:@href</historical_main_page_headlines_xpath>
         </MainPageManage>
         <ArticleManage>
             <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <publish_date>//header[@class="entry__header bn-entry-header"]/div[@class="timestamp"]/span[@class="timestamp__date--published"]/text()</publish_date>
             <headline_title>//h1[@class="headline__title"]/text()</headline_title>
-            <optional_tags>//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/text()</optional_tags>
+            <body keepall="p">div[@class="entry__body js-entry-body"]</body>
+            <optional_tags type="list">//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/a</optional_tags>
             <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
         </ArticleManage>
     </news_outlet>
 
-    <news_outlet name="Huffington Post" domain="huffingtonpost">
-        <url_focus>http://www.huffingtonpost.com/section/politics</url_focus>
+    <news_outlet name="Politico" domain="politico">
+        <url_focus>http://www.politico.com/politics</url_focus>
         <MainPageManage>
-            <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+            <main_page_headlines_xpath>[Insert links to look for on main page]</main_page_headlines_xpath>
         </MainPageManage>
         <ArticleManage>
-            <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
-            <headline_title>//h1[@class="headline__title"]/text()</headline_title>
-            <optional_tags>//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/text()</optional_tags>
-            <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
+            <headline_title>//div[@class="summary  "]/*/h1/text()</headline_title>
+            <publish_date>//header[@class="entry__header bn-entry-header"]/div[@class="timestamp"]/span[@class="timestamp__date--published"]/text()</publish_date>
+
+            <body keepall="p">//div[class="story-text"]</body>
+            <optional_tags type="list">//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/a</optional_tags>
+            <author>///footer[@class="meta"]//span[@class="vcard"]/a[@rel="author"]/text()</author>
         </ArticleManage>
-    </news_outlet>
-    <news_outlet name="Huffington Post" domain="huffingtonpost">
-        <url_focus>http://www.huffingtonpost.com/section/politics</url_focus>
+    <news_outlet/>
+
+    <!--http://www.truthrevolt.org/news/viral-chart-claims-fight-fake-news-promotes-biased-media
+
+    HAVE NOT COMPLETED BELOW THIS LINE !-->
+
+    <news_outlet name="Other98" domain="other98">
+        <url_focus>https://other98.com/</url_focus>
         <MainPageManage>
+            <splash></splash>
             <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+            <historical_main_page_headlines_xpath>//a[re:@href</historical_main_page_headlines_xpath>
         </MainPageManage>
         <ArticleManage>
             <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <publish_date>//header[@class="entry__header bn-entry-header"]/div[@class="timestamp"]/span[@class="timestamp__date--published"]/text()</publish_date>
             <headline_title>//h1[@class="headline__title"]/text()</headline_title>
-            <optional_tags>//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/text()</optional_tags>
+            <body keepall="p">div[@class="entry__body js-entry-body"]</body>
+            <optional_tags type="list">//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/a</optional_tags>
             <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
         </ArticleManage>
     </news_outlet>
 
+    <news_outlet name="Eagle Rising" domain="eaglerising">
+        <url_focus>http://eaglerising.com/</url_focus>
+        <MainPageManage>
+            <splash></splash>
+            <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+            <historical_main_page_headlines_xpath>//a[re:@href</historical_main_page_headlines_xpath>
+        </MainPageManage>
+        <ArticleManage>
+            <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <publish_date>//header[@class="entry__header bn-entry-header"]/div[@class="timestamp"]/span[@class="timestamp__date--published"]/text()</publish_date>
+            <headline_title>//h1[@class="headline__title"]/text()</headline_title>
+            <body keepall="p">div[@class="entry__body js-entry-body"]</body>
+            <optional_tags type="list">//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/a</optional_tags>
+            <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
+        </ArticleManage>
+    </news_outlet>
+
+
+        <news_outlet name="Right Wing News" domain="rightwingnews">
+        <url_focus>http://rightwingnews.com/</url_focus>
+        <MainPageManage>
+            <splash></splash>
+            <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+            <historical_main_page_headlines_xpath>//a[re:@href</historical_main_page_headlines_xpath>
+        </MainPageManage>
+        <ArticleManage>
+            <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <publish_date>//header[@class="entry__header bn-entry-header"]/div[@class="timestamp"]/span[@class="timestamp__date--published"]/text()</publish_date>
+            <headline_title>//h1[@class="headline__title"]/text()</headline_title>
+            <body keepall="p">div[@class="entry__body js-entry-body"]</body>
+            <optional_tags type="list">//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/a</optional_tags>
+            <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
+        </ArticleManage>
+    </news_outlet>
+
+
+        <news_outlet name="Freedom Daily" domain="freedomdaily">
+        <url_focus>http://freedomdaily.com/</url_focus>
+        <MainPageManage>
+            <splash></splash>
+            <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+            <historical_main_page_headlines_xpath>//a[re:@href</historical_main_page_headlines_xpath>
+        </MainPageManage>
+        <ArticleManage>
+            <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <publish_date>//header[@class="entry__header bn-entry-header"]/div[@class="timestamp"]/span[@class="timestamp__date--published"]/text()</publish_date>
+            <headline_title>//h1[@class="headline__title"]/text()</headline_title>
+            <body keepall="p">div[@class="entry__body js-entry-body"]</body>
+            <optional_tags type="list">//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/a</optional_tags>
+            <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
+        </ArticleManage>
+    </news_outlet>
+
+
+        <news_outlet name="CNN" domain="cnn">
+        <url_focus>http://www.cnn.com/politics</url_focus>
+        <MainPageManage>
+            <splash></splash>
+            <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+            <historical_main_page_headlines_xpath>//a[re:@href</historical_main_page_headlines_xpath>
+        </MainPageManage>
+        <ArticleManage>
+            <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <publish_date>//header[@class="entry__header bn-entry-header"]/div[@class="timestamp"]/span[@class="timestamp__date--published"]/text()</publish_date>
+            <headline_title>//h1[@class="headline__title"]/text()</headline_title>
+            <body keepall="p">div[@class="entry__body js-entry-body"]</body>
+            <optional_tags type="list">//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/a</optional_tags>
+            <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
+        </ArticleManage>
+    </news_outlet>
+
+
+        <news_outlet name="ABC News" domain="abcnews.go">
+        <url_focus>http://abcnews.go.com/Politics</url_focus>
+        <MainPageManage>
+            <splash></splash>
+            <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+            <historical_main_page_headlines_xpath>//a[re:@href</historical_main_page_headlines_xpath>
+        </MainPageManage>
+        <ArticleManage>
+            <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <publish_date>//header[@class="entry__header bn-entry-header"]/div[@class="timestamp"]/span[@class="timestamp__date--published"]/text()</publish_date>
+            <headline_title>//h1[@class="headline__title"]/text()</headline_title>
+            <body keepall="p">div[@class="entry__body js-entry-body"]</body>
+            <optional_tags type="list">//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/a</optional_tags>
+            <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
+        </ArticleManage>
+    </news_outlet>
+
+
+    <news_outlet name="Occupy Democrats" domain="occupydemocrats">
+        <url_focus>http://occupydemocrats.com/</url_focus>
+        <MainPageManage>
+            <splash></splash>
+            <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+            <historical_main_page_headlines_xpath>//a[re:@href</historical_main_page_headlines_xpath>
+        </MainPageManage>
+        <ArticleManage>
+            <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <publish_date>//header[@class="entry__header bn-entry-header"]/div[@class="timestamp"]/span[@class="timestamp__date--published"]/text()</publish_date>
+            <headline_title>//h1[@class="headline__title"]/text()</headline_title>
+            <body keepall="p">div[@class="entry__body js-entry-body"]</body>
+            <optional_tags type="list">//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/a</optional_tags>
+            <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
+        </ArticleManage>
+    </news_outlet>
+
+
+    <news_outlet name="Addicting Info" domain="addictinginfo">
+        <url_focus>http://addictinginfo.org/</url_focus>
+        <MainPageManage>
+            <splash></splash>
+            <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+            <historical_main_page_headlines_xpath>//a[re:@href</historical_main_page_headlines_xpath>
+        </MainPageManage>
+        <ArticleManage>
+            <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <publish_date>//header[@class="entry__header bn-entry-header"]/div[@class="timestamp"]/span[@class="timestamp__date--published"]/text()</publish_date>
+            <headline_title>//h1[@class="headline__title"]/text()</headline_title>
+            <body keepall="p">div[@class="entry__body js-entry-body"]</body>
+            <optional_tags type="list">//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/a</optional_tags>
+            <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
+        </ArticleManage>
+    </news_outlet>
+
+    <news_outlet name="New York Times" domain="nytimes">
+        <url_focus>https://www.nytimes.com/pages/politics/index.html</url_focus>
+        <MainPageManage>
+            <splash></splash>
+            <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+            <historical_main_page_headlines_xpath>//a[re:@href</historical_main_page_headlines_xpath>
+        </MainPageManage>
+        <ArticleManage>
+            <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <publish_date>//header[@class="entry__header bn-entry-header"]/div[@class="timestamp"]/span[@class="timestamp__date--published"]/text()</publish_date>
+            <headline_title>//h1[@class="headline__title"]/text()</headline_title>
+            <body keepall="p">div[@class="entry__body js-entry-body"]</body>
+            <optional_tags type="list">//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/a</optional_tags>
+            <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
+        </ArticleManage>
+    </news_outlet>
+
+    <news_outlet name="The Blaze" domain="theblaze">
+        <url_focus>http://www.theblaze.com/</url_focus>
+        <MainPageManage>
+            <splash></splash>
+            <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+            <historical_main_page_headlines_xpath>//a[re:@href</historical_main_page_headlines_xpath>
+        </MainPageManage>
+        <ArticleManage>
+            <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <publish_date>//header[@class="entry__header bn-entry-header"]/div[@class="timestamp"]/span[@class="timestamp__date--published"]/text()</publish_date>
+            <headline_title>//h1[@class="headline__title"]/text()</headline_title>
+            <body keepall="p">div[@class="entry__body js-entry-body"]</body>
+            <optional_tags type="list">//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/a</optional_tags>
+            <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
+        </ArticleManage>
+    </news_outlet>
+
+    <news_outlet name="Fox News" domain="foxnews">
+        <url_focus>http://www.foxnews.com/politics.html</url_focus>
+        <MainPageManage>
+            <splash></splash>
+            <main_page_headlines_xpath>//div[@class="card__headlines"]/h2[@class = "card__headline js-card-headline"]/a</main_page_headlines_xpath>
+            <historical_main_page_headlines_xpath>//a[re:@href</historical_main_page_headlines_xpath>
+        </MainPageManage>
+        <ArticleManage>
+            <checkForPolitics>//span[@class="entry-eyebrow"]/span/a/text()</checkForPolitics>
+            <publish_date>//header[@class="entry__header bn-entry-header"]/div[@class="timestamp"]/span[@class="timestamp__date--published"]/text()</publish_date>
+            <headline_title>//h1[@class="headline__title"]/text()</headline_title>
+            <body keepall="p">div[@class="entry__body js-entry-body"]</body>
+            <optional_tags type="list">//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/a</optional_tags>
+            <author>//a[@class="author-card__details__link bn-author-name bn-clickable"]/text()</author>
+        </ArticleManage>
+    </news_outlet>
 </scraperules>
 
