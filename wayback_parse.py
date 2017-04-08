@@ -22,15 +22,28 @@ def parseURLContent(response):
 
 
 i = 0
-while i <= 120:
+GO_BACK_DAYS = 100
+GO_BACK_YEARS = 8
+while i <= GO_BACK_DAYS:
     date_to_search = datetime.date.today() + datetime.timedelta(days=-1 * i)
+    temp_timestamp = datetime.datetime.today().timestamp()
+
     for utree in scrape_victims.xpath('/scraperules/news_outlet/url_focus'):
         url_media = utree.text
 
         res = getLink(date_to_search, url_media)
+
+
         d = json.loads(res.content.decode('utf-8'))
+
+        if int(d['archived_snapshots']['closest']['timestamp']) >= temp_timestamp:
+            continue
+        else:
+            temp_timestamp = d['archived_snapshots']['closest']['timestamp']
+
         try:
-            print(utree.getparent().attrib['name'], d['archived_snapshots']['closest'])
+
+            utree.getparent().attrib['name'], d['archived_snapshots']['closest']
         except KeyError:
             print(utree.text, date_to_search.strftime('%Y-%m-%d'))
     i +=1
