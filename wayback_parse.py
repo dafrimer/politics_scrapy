@@ -43,7 +43,7 @@ while i <= GO_BACK_DAYS:
 
         try:
 
-            utree.getparent().attrib['name'], d['archived_snapshots']['closest']
+            print(utree.getparent().attrib['name'], d['archived_snapshots']['closest'])
         except KeyError:
             print(utree.text, date_to_search.strftime('%Y-%m-%d'))
     i +=1
