@@ -30,7 +30,7 @@
             <optional_tags type="list">//div[@class="tag-cloud js-tag-cloud bn-tag-cloud"]/a</optional_tags>
             <author>///footer[@class="meta"]//span[@class="vcard"]/a[@rel="author"]/text()</author>
         </ArticleManage>
-    <news_outlet/>
+    </news_outlet>
 
     <!--http://www.truthrevolt.org/news/viral-chart-claims-fight-fake-news-promotes-biased-media
 
